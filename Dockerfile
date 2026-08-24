@@ -19,7 +19,7 @@ RUN sh /uv-installer.sh && rm /uv-installer.sh
 
 ENV PATH="/root/.local/bin/:$PATH"
 
-COPY .python-version .
+COPY .python-version* .
 COPY pyproject.toml .
 COPY uv.lock .
 
